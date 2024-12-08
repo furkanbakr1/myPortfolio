@@ -201,6 +201,7 @@ body.dark-theme .timeline-content h3 {
     transition: transform 0.3s ease;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
 }
 
 .project-card:hover {
@@ -377,4 +378,10 @@ footer ul li a {
 
 footer ul li a:hover {
     opacity: 0.8;
+}
+
+/* Dark theme için ek stil */
+body.dark-theme .project-card {
+    background-color: #2d3436;
+    color: #fff;
 }
