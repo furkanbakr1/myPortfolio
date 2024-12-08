@@ -1,0 +1,355 @@
+/* Navbar stilleri */
+.custom-navbar {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #2ecc71 !important;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50; /* Yeşil renk */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Hover efekti için (isteğe bağlı) */
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Tema değiştirici ikonu */
+.theme-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.theme-toggle i {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .custom-navbar {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50);
+}
+
+body.dark-theme .nav-link:hover {
+    color: #2ecc71 !important;
+}
+
+/* Tema geçiş animasyonu */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* About section styles */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-text {
+    padding-right: 30px;
+}
+
+.about-image img {
+    max-width: 400px;
+    border: 8px solid rgba(46, 204, 113, 0.2);
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Dark theme için ek stiller */
+body.dark-theme .about-section {
+    background-color: #1a1a1a;
+}
+
+body.dark-theme .about-text h1 {
+    color: #ffffff;
+}
+
+body.dark-theme .about-text p {
+    color: #e0e0e0;
+}
+
+body.dark-theme .btn-outline-primary {
+    color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+body.dark-theme .btn-outline-primary:hover {
+    background-color: #2ecc71;
+    color: #1a1a1a;
+}
+
+/* Timeline styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #2ecc71;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background: #2ecc71;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #fff;
+}
+
+.timeline-content {
+    width: calc(50% - 30px);
+    padding: 20px;
+    background: rgba(46, 204, 113, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-content h3 {
+    color: #2ecc71;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Dark theme için timeline stilleri */
+body.dark-theme .timeline::before {
+    background: #2ecc71;
+}
+
+body.dark-theme .timeline-dot {
+    border-color: #1a1a1a;
+}
+
+body.dark-theme .timeline-content {
+    background: rgba(46, 204, 113, 0.1);
+}
+
+body.dark-theme .timeline-content h3 {
+    color: #2ecc71;
+}
+
+/* Responsive timeline */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+    }
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.tech-stack .badge {
+    margin-right: 0.5rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.card-footer {
+    padding: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.btn i {
+    font-size: 0.8rem;
+}
+
+/* Blog Post Stilleri */
+.blog-post {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post .card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.blog-post-meta {
+    font-size: 0.9rem;
+}
+
+/* Yorum Bölümü Stilleri */
+.comments-section {
+    border-top: 1px solid #dee2e6;
+    padding-top: 1.5rem;
+}
+
+.comment {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+/* Beğeni ve Yorum Butonları */
+.blog-interactions {
+    padding: 1rem 0;
+}
+
+.like-btn.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+/* Sidebar Stilleri */
+.list-group-item {
+    border: none;
+    padding: 0.75rem 0;
+}
+
+.list-group-item:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .blog-post .card-img-top {
+        height: 200px;
+    }
+}
+
+/* İletişim Bilgileri */
+.contact-info-item {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info-item i {
+    color: var(--bs-primary);
+}
+
+/* İletişim Formu */
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 0.8rem;
+    border: 1px solid #dee2e6;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Sosyal Medya Linkleri */
+.social-links .social-link {
+    color: #6c757d;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+}
+
+.social-link:hover {
+    color: var(--bs-primary);
+    transform: translateY(-3px);
+}
+
+/* LinkedIn için özel renk */
+.social-link[title="LinkedIn"]:hover {
+    color: #0077b5;
+}
+
+/* GitHub için özel renk */
+.social-link[title="GitHub"]:hover {
+    color: #333;
+}
+
+/* Twitter için özel renk */
+.social-link[title="Twitter"]:hover {
+    color: #1da1f2;
+}
+
+/* Instagram için özel renk */
+.social-link[title="Instagram"]:hover {
+    color: #e4405f;
+}

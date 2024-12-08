@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <!-- Logo/İsim -->
+            <a class="navbar-brand" href="index.html">Furkan Bakır</a>
+            
+            <!-- Mobil menü butonu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar linkleri -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projelerim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+                
+                <!-- Tema değiştirici -->
+                <div class="theme-toggle">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container py-5">
+    <h1 class="text-center mb-5">Projelerim</h1>
+    
+    <div class="row g-4">
+        <!-- Müzik Sitesi Projesi -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+                <img src="./music/img/hero.jpg" class="card-img-top" alt="Müzik Sitesi">
+                <div class="card-body">
+                    <h5 class="card-title">Müzik Dünyam</h5>
+                    <p class="card-text">Favori müziklerimi ve çalma listelerimi paylaştığım, müzik tutkunları için hazırlanmış kişisel müzik platformu.</p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-warning">HTML</span>
+                        <span class="badge bg-info">CSS</span>
+                        <span class="badge bg-primary">JavaScript</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <a href="../discoveriMusic/index.html" class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>Canlı Demo
+                        </a>
+                        <a href="https://github.com/SIZIN-GITHUB-KULLANICI-ADINIZ/music-site" class="btn btn-outline-dark">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proje 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+                <img src="project1.jpg" class="card-img-top" alt="Proje 1">
+                <div class="card-body">
+                    <h5 class="card-title">E-Ticaret Platformu</h5>
+                    <p class="card-text">Modern bir e-ticaret deneyimi sunan, responsive tasarıma sahip web uygulaması.</p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-primary">React</span>
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-info">MongoDB</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>Canlı Demo
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proje 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+                <img src="project2.jpg" class="card-img-top" alt="Proje 2">
+                <div class="card-body">
+                    <h5 class="card-title">Task Manager</h5>
+                    <p class="card-text">Görev yönetimi ve organizasyon için geliştirilmiş web uygulaması.</p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-warning">JavaScript</span>
+                        <span class="badge bg-danger">Firebase</span>
+                        <span class="badge bg-secondary">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>Canlı Demo
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proje 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 project-card">
+                <img src="project3.jpg" class="card-img-top" alt="Proje 3">
+                <div class="card-body">
+                    <h5 class="card-title">Weather App</h5>
+                    <p class="card-text">Hava durumu bilgilerini gösteren modern ve kullanıcı dostu uygulama.</p>
+                    <div class="tech-stack mb-3">
+                        <span class="badge bg-primary">React</span>
+                        <span class="badge bg-info">API</span>
+                        <span class="badge bg-success">Tailwind</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>Canlı Demo
+                        </a>
+                        <a href="#" class="btn btn-outline-dark">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <!-- Footer bölümü gelecek -->
+    <footer>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!-- Custom JS -->
+<script src="script.js"></script>
+  
+</body>
+</html>
